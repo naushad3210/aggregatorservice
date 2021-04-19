@@ -1,0 +1,17 @@
+aggregator:
+  userServiceHostUrl: ${user_service_host_url}
+  orderServiceHostUrl: ${order_service_host_url}
+  
+server:
+  servlet:
+    context-path: ${context_path}
+  port: ${port}
+  
+spring:
+  application:
+    name: aggregator
+opentracing:
+  jaeger:
+    udp-sender:
+      host: ${jaeger_udp_sender_host}
+      port: ${jaeger_udp_sender_port}

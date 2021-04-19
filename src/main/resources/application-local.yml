@@ -1,0 +1,17 @@
+aggregator:
+  userServiceHostUrl: "http://localhost:9090/user-service"
+  orderServiceHostUrl: "http://localhost:9091/order-service"
+  
+server:
+  servlet:
+    context-path: /aggregator-service
+  port: 8080
+  
+spring:
+  application:
+    name: aggregator
+opentracing:
+  jaeger:
+    udp-sender:
+      host: localhost
+      port: 6831
